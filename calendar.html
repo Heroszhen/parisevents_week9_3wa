@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<!-- AddEvent script -->
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+<!-- AddEvent Settings -->
+<script type="text/javascript">
+window.addeventasync = function(){
+    addeventatc.settings({
+        appleical  : {show:true, text:"Apple Calendar"},
+        google     : {show:true, text:"Google <em>(online)</em>"},
+        office365  : {show:true, text:"Office 365 <em>(online)</em>"},
+        outlook    : {show:true, text:"Outlook"},
+        outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+        yahoo      : {show:true, text:"Yahoo <em>(online)</em>"}
+    });
+};
+</script>
+
+</head>
+<body>
+
+<!-- Button code -->
+<div title="Add to Calendar" class="addeventatc">
+    Add to Calendar
+    <span class="start">12/10/2020 08:00 AM</span>
+    <span class="end">12/10/2020 10:00 AM</span>
+    <span class="timezone">America/Los_Angeles</span>
+    <span class="title">Summary of the event</span>
+    <span class="description">Description of the event</span>
+</div>
+<a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Summary333+of+the+event&dates=20201210T080000/20201210T100000&ctz=America/Los_Angeles&details=Description+of+the+event&location=Location+of+the+event&pli=1&uid=1606398179addeventcom&sf=true&output=xml" target="_blank">google</a>
+</body>
+</html>

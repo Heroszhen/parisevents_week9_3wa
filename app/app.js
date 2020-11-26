@@ -18,9 +18,21 @@ let app = {
                     td[1].textContent = entry["fields"]["address_city"];
                     td[2].textContent = entry["fields"]["address_street"];
                     td[3].textContent = entry["fields"]["date_start"];
+
                     let img = document.createElement('img'); 
                     img.setAttribute("src",entry["fields"]["cover_url"]);
                     td[4].appendChild(img);
+
+                    let a = document.createElement('a'); 
+                    const regex = /-|:/gi;
+                    let date1 = entry["fields"]["date_start"].replace(regex, '');
+                    let date2 = entry["fields"]["date_end"].replace(regex, '');
+                    let src = "https://calendar.google.com/calendar/u/0/r/eventedit?text="+entry["fields"]["title"]+"&dates="+date1+"/"+date2+"&ctz=America/Los_Angeles&details="+entry["fields"]["lead_text"]+"&location="+entry["fields"]["address_city"]+" , "+entry["fields"]["address_street"]+"&pli=1&uid=1606398179addeventcom&sf=true&output=xml";
+                    a.setAttribute("href",src);
+                    a.setAttribute("target","_blank");
+                    a.setAttribute("class","btn btn-outline-primary");
+                    a.textContent = "Ajouter";
+                    td[5].appendChild(a);
 
                     tbody.appendChild(clone);
                 }
@@ -40,9 +52,21 @@ let app = {
                     td[1].textContent = entry["fields"]["address_city"];
                     td[2].textContent = entry["fields"]["address_street"];
                     td[3].textContent = entry["fields"]["date_start"];
+                    
                     let img = document.createElement('img'); 
                     img.setAttribute("src",entry["fields"]["cover_url"]);
                     td[4].appendChild(img);
+
+                    let a = document.createElement('a'); 
+                    const regex = /-|:/gi;
+                    let date1 = entry["fields"]["date_start"].replace(regex, '');
+                    let date2 = entry["fields"]["date_end"].replace(regex, '');
+                    let src = "https://calendar.google.com/calendar/u/0/r/eventedit?text="+entry["fields"]["title"]+"&dates="+date1+"/"+date2+"&ctz=America/Los_Angeles&details="+entry["fields"]["lead_text"]+"&location="+entry["fields"]["address_city"]+" , "+entry["fields"]["address_street"]+"&pli=1&uid=1606398179addeventcom&sf=true&output=xml";
+                    a.setAttribute("href",src);
+                    a.setAttribute("target","_blank");
+                    a.setAttribute("class","btn btn-outline-primary");
+                    a.textContent = "Ajouter";
+                    td[5].appendChild(a);
 
                     tbody.appendChild(clone);
                 }
