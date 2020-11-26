@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-12 h2 mb-3 text-center">
+        Les évenements à paris
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="keywords">Terme</label>
+        <input class="form-control" type="text" id="keywords" name="keywords" placeholder="Titre d'un évenement....">
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="year">Année des évenements</label>
+        <select class="form-control" id="year" name="year">
+            <option value="all">All</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="sort">Trier par </label>
+        <select class="form-control" id="sort" name="sort">
+            <option value="croissant">Date(croissant)</option>
+            <option value="decroissant">Date(décroissant)</option>
+            <option value="title">Titre</option>
+        </select>
+    </div>
+    <div class="col-12 h2 mt-4 mb-3 text-center">
+        <button type="button" id="research" class="btn btn-primary btn-block">Rechercher</button>
+    </div>
+
+    <div id="map" style="display:none;width:99%; height:500px; border:1px solid black; margin:0 auto"></div>
+
+    <div class="col-12 mt-4">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Ville</th>
+                <th scope="col">adresse</th>
+                <th scope="col">Date de début</th>
+                <th scope="col">Photo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- existing data could optionally be included here -->
+            </tbody>
+          </table>
+          
+          <template id="productrow">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+          </template> 
+    </div>
+</div>
+
