@@ -1,0 +1,26 @@
+{
+  "name": "ppb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "vanilla-router": "^1.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heroszhen/parisevents_week9_3wa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heroszhen/parisevents_week9_3wa/issues"
+  },
+  "homepage": "https://github.com/Heroszhen/parisevents_week9_3wa#readme"
+}

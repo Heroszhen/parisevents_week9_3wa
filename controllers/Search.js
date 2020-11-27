@@ -25,10 +25,9 @@ export default class Search{
             if(scrollHeight > clientHeight && scrollTop + clientHeight === scrollHeight) {
                 let courant = this.getCourant(this.tab);
                 app.dom.setTemplate2(courant);
-              }
+            }
         });
 
-        
         
     }
 
